@@ -1,4 +1,4 @@
-FROM ruby:2.4
+FROM ruby:2.4-stretch
 
 RUN apt-get clean && apt-get update && apt-get install -y locales
 
