@@ -1,5 +1,5 @@
 # docker-ruby
 
-Latest ruby-2.4 with:
+Latest ruby-2.5 with:
 
 * mysql cli
