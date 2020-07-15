@@ -1,4 +1,4 @@
-FROM ruby:2.6-stretch
+FROM ruby:2.7-buster
 ENV DEBIAN_FRONTEND=noninteractive
 
 RUN apt-get clean && apt-get update && apt-get install -y locales && rm -rf /var/lib/apt/lists/* \
@@ -7,6 +7,6 @@ ENV LANG en_US.utf8
 
 RUN apt-get clean && \
     apt-get update -y && \
-    apt-get install -y mysql-client openssh-client rsync redis-tools cmake curl
+    apt-get install -y default-mysql-client openssh-client rsync redis-tools cmake curl
 
 RUN useradd -lM coverage
